@@ -1,13 +1,19 @@
-package E_independent_practice;
+package A_independent_practice;
 
 import javax.swing.*;
 
 /**
- * 独立实践
- *
- * 编写程序输入两个位数相同的两个二进制数，求这两个二进制数的和并输出。
+ * 3.4.6 独立实践
+ * <p>
+ * 3、二进制加法器
+ * <p>
+ * 定义如下方法：
+ * 实现位数相同的两个二进制数相加，并将二进制数相加的结果以字符串的显示返回。
+ * 并编写程序测试该方法。
+ * <p>
+ * public static String caculator(String x, String y)
  */
-public class Exercise {
+public class Exercise_3 {
     private static final String CRLF = "\r\n";
 
     public static void main(String[] args) {
@@ -21,9 +27,12 @@ public class Exercise {
                 "The Result is :" + CRLF + result,
                 title
         );
-
     }
 
+
+    public static String caculator(String x, String y) {
+        return addTwoBinary(x, y);
+    }
 
     /**
      * Calculate two binary number.
@@ -58,7 +67,7 @@ public class Exercise {
         //Handle according SignBitStatus
         if (sbs.getStatus() == SignBitStatus.TWO_POSITIVE) {
             String result = addTwoPositiveBinary(binaryNum1, binaryNum2);
-            if(result.toCharArray()[0]=='1'){
+            if (result.toCharArray()[0] == '1') {
                 return new StringBuilder(result).insert(0, "0").toString();
             }
             return result;
@@ -72,7 +81,6 @@ public class Exercise {
             return new StringBuilder(r).insert(0, '1').toString();   //append the symbols
 
         } else if (sbs.getStatus() == SignBitStatus.ONE_POSITIVE_ONE_NEGATIVE) {
-
 
 
         }
@@ -224,14 +232,6 @@ public class Exercise {
     }
 
 
-    static String showInputDialog(String message, String title) {
-        return JOptionPane.showInputDialog(null, message, title, JOptionPane.PLAIN_MESSAGE);
-    }
-
-    static void showMessageDialog(String message, String title) {
-        JOptionPane.showMessageDialog(null, message, title, JOptionPane.PLAIN_MESSAGE);
-    }
-
     /**
      * Describe two binary numbers
      */
@@ -252,7 +252,12 @@ public class Exercise {
     }
 
 
+    static String showInputDialog(String message, String title) {
+        return JOptionPane.showInputDialog(null, message, title, JOptionPane.PLAIN_MESSAGE);
+    }
+
+    static void showMessageDialog(String message, String title) {
+        JOptionPane.showMessageDialog(null, message, title, JOptionPane.PLAIN_MESSAGE);
+    }
+
 }
-
-
-
