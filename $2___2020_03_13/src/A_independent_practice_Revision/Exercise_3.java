@@ -79,7 +79,7 @@ public class Exercise_3 {
         StringBuilder result_byXOR = new StringBuilder();
         StringBuilder result_byCarryBit = new StringBuilder();
 
-        if(Integer.valueOf(binary2)==0){
+        if(!binary2.contains("1")){
             return binary1;
         }
 
@@ -95,19 +95,16 @@ public class Exercise_3 {
             }
 
             //calculate carry bit
-            //(binary1 ^ binary)<<1
+            //(binary1 & binary2)<<1
             if(b1[i]=='1'&&b2[i]=='1'){
                 result_byCarryBit.append('1');
             }else {
                 result_byCarryBit.append('0');
             }
         }
-        if(result_byXOR.toString().toCharArray()[0]=='0'){
-            result_byXOR.insert(0, '0');
-        }else {
-            result_byXOR.insert(0, '1');
-        }
+
         result_byCarryBit.append('0');
+        result_byCarryBit.deleteCharAt(0);
 
 
 

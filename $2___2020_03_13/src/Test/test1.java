@@ -3,8 +3,8 @@ package Test;
 public class test1 {
     public static void main(String[] args) {
 
-        String input1 = "11110";
-        String input2 = "1010";
+        String input1 = " 000111 ";
+        String input2 = "100100 ";
         String result = caculator(input1, input2, 0);
 
         System.out.println("输入1：" + input1);
