@@ -34,7 +34,7 @@ public class test1 {
 
         public Utils(){}
 
-        public String[] getPrimeRows(T[] array, int row){
+        public  String[] getPrimeRows(T[] array, int row){
             int column = (array.length % row == 0) ? (array.length / row) : (array.length / row + 1);
 
             StringBuilder sb = new StringBuilder();
