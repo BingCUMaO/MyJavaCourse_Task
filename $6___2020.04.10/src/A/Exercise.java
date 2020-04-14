@@ -25,6 +25,7 @@ import java.util.Arrays;
 public class Exercise {
     public static void main(String[] args) {
 
+
         double[][] arr  = {
                 {50,50},
                 {60,60},
