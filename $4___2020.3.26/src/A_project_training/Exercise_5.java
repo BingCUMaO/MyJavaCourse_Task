@@ -1,13 +1,10 @@
-package B_project_training;
+package A_project_training;
 
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.*;
 
 /**
  * 4.4.3 项目实战

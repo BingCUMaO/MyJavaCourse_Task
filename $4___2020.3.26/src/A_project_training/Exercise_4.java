@@ -1,4 +1,4 @@
-package B_project_training;
+package A_project_training;
 
 
 import javax.imageio.ImageIO;

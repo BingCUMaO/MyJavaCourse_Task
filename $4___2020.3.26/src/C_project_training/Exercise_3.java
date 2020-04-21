@@ -1,8 +1,6 @@
 package C_project_training;
 
 
-import B_project_training.Exercise_1;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

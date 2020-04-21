@@ -1,6 +1,4 @@
-package B_project_training;
-
-import java.text.NumberFormat;
+package A_project_training;
 
 /**
  * 3,6 项目实战
