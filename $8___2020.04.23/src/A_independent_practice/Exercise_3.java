@@ -37,7 +37,7 @@ public class Exercise_3 {
             int temp2 = baseDenominator < 0 ? baseDenominator * (-1) : baseDenominator;
             int min = Math.min(temp1, temp2);
 
-            for (int i = min; i >= 2; i--) {
+            for (int i = min; i >= 2; i-- ) {
                 if (baseNumerator % i == 0 && baseDenominator % i == 0) {
                     baseNumerator /= i;
                     baseDenominator /= i;
