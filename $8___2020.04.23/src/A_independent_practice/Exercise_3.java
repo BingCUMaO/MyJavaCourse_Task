@@ -33,8 +33,9 @@ public class Exercise_3 {
 
         //简单的分数约分操作
         private void reduceFrac(){
-            int min = Math.min(baseDenominator, baseNumerator);
-            min = min < 0 ? min * (-1) : min;
+            int temp1 = baseNumerator < 0 ? baseNumerator * (-1) : baseNumerator;
+            int temp2 = baseDenominator < 0 ? baseDenominator * (-1) : baseDenominator;
+            int min = Math.min(temp1, temp2);
 
             for (int i = 2; i <= min; i++) {
                 if (baseNumerator % i == 0 && baseDenominator % i == 0) {
@@ -72,6 +73,25 @@ public class Exercise_3 {
             return multiply(denominator, numerator);
         }
 
+        public int getBaseNumerator() {
+            return baseNumerator;
+        }
+
+        public void setBaseNumerator(int baseNumerator) {
+            this.baseNumerator = baseNumerator;
+        }
+
+        public int getBaseDenominator() {
+            return baseDenominator;
+        }
+
+        public boolean setBaseDenominator(int baseDenominator) {
+            if (baseDenominator != 0) {
+                this.baseDenominator = baseDenominator;
+                return true;
+            }
+            return false;
+        }
     }
 }
 
