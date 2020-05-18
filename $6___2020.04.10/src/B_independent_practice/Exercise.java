@@ -1,4 +1,4 @@
-package B;
+package B_independent_practice;
 
 
 /**
